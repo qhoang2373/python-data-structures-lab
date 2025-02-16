@@ -5,7 +5,9 @@
 # Assign the last student’s name to a variable named last_student.
 
 def manage_students():
-    # your code here
+    ## creates a list of students, named kyle kevin and kyrie, assigns the 2nd and last student's names
+    ## to variables, and returns a message 
+
     students =  ["Kyle", "Kevin", "Kyrie"]
 
     ## this code will assign the Kevin's name to a variable named first_student
@@ -16,6 +18,7 @@ def manage_students():
     
     ## the result of the tuple
     return first_student, last_student
+
 
 # Call the function and print the result
 print('Exercise 1:', manage_students())
@@ -28,13 +31,31 @@ print('Exercise 1:', manage_students())
 
 def combine_foods():
     
-    foods = ("pizza", "taco", "hotdogs")
+    foods = ("pizza", "taco", "hotdogs") ##tuple for foods
     meal = ""
 
     for food in foods:
         meal += food + " "
 
     return meal.strip()
-    
+
+
 # Call the function and print the result
 print('Exercise 2:', combine_foods())
+
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+def slice_foods():
+    
+
+    foods = ("candy", "Icecream", "pizza", "taco", "hotdogs")
+    last_two_foods = foods[-2:]
+    
+    return last_two_foods
+
+
+
+# Call the function and print the result
+print('Exercise 3:', slice_foods())
