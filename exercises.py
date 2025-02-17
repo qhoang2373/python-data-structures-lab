@@ -70,14 +70,38 @@ def hometown_info():
     ## create a dictionary and formats a string using its values
 
     home_town = {
-        "city": "Cheyenne",
-        "state": "Wyoming",
-        "population": 65000
+        "city": "Montclair",
+        "state": "California",
+        "population": 37000
   }
 
-    home_town_message = f"{home_town['city']}, {home_town['state']} has a population of {home_town['population']}"
+    home_town_message = f"{home_town['city']}, {home_town['state']} has a population of {home_town['population']}" ## placeholders that are replaced with values from the dictionary
 
     return home_town_message
 
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
+
+
+# Exercise 5: Iterating Over Dictionary Items
+#
+# Define an empty list named home_town_items.
+# Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
+
+def list_home_town_items():
+    ## iterates over a dictionary and creates a list of key-value pairs 
+
+    home_town = {
+        "city": "Montclair",
+        "state": "California",
+        "population": 37000
+  }
+
+    home_town_items = []
+    for key, value in home_town.items():
+        home_town_items.append(f'{key} = {value}')
+
+    return home_town_items
+
+
+print('Exercise 5:', list_home_town_items())
